@@ -13,5 +13,8 @@
     "url": "https://github.com/MCProHosting/beam-common/issues"
   },
   "homepage": "https://github.com/MCProHosting/beam-common",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "lodash": "^2.4.1"
+  }
 }
