@@ -15,6 +15,6 @@ var Mod = module.exports.Mod = Normal.concat([
     'bypass_slowchat'
 ]);
 
-var Admin = module.exports.Admin = Normal.concat([
+var Admin = module.exports.Admin = Mod.concat([
     'edit_options'
 ]);
