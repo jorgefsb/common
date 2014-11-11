@@ -16,5 +16,8 @@ var Mod = module.exports.Mod = Normal.concat([
 ]);
 
 var Admin = module.exports.Admin = Mod.concat([
-    'edit_options'
+    'edit_options',
+    'change_role'
 ]);
+
+var Owner = module.exports.Owner = Admin.concat([]);
