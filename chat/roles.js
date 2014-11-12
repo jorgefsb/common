@@ -4,15 +4,16 @@ var Muted = module.exports.Muted = Banned.concat([
     'connect'
 ]);
 
-var Normal = module.exports.Normal = Muted.concat([
+var User = module.exports.User = Muted.concat([
     'chat',
     'poll_vote'
 ]);
 
-var Mod = module.exports.Mod = Normal.concat([
+var Mod = module.exports.Mod = User.concat([
     'poll_start',
     'bypass_links',
-    'bypass_slowchat'
+    'bypass_slowchat',
+    'remove_message'
 ]);
 
 var Admin = module.exports.Admin = Mod.concat([
