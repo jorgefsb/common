@@ -18,7 +18,8 @@ var Mod = module.exports.Mod = User.concat([
 
 var Admin = module.exports.Admin = Mod.concat([
     'edit_options',
-    'change_role'
+    'change_role',
+    'be_immutable'
 ]);
 
 var Owner = module.exports.Owner = Admin.concat([]);
