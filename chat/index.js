@@ -4,14 +4,14 @@ var roles = require('./roles');
 var linkPattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
 
 /**
- * Gets the role of the user object. "Normal" if we don't match anything else.
+ * Gets the role of the user object. "User" if we don't match anything else.
  * @param  {Object} user
  * @return {Boolean}
  */
 var getRole = module.exports.getRole = function (user) {
     var permissions = roles[user.role];
     if (typeof permissions === 'undefined') {
-        permissions = roles.Normal;
+        permissions = roles.User;
     }
 
     return permissions;
