@@ -13,7 +13,8 @@ var Mod = module.exports.Mod = User.concat([
     'poll_start',
     'bypass_links',
     'bypass_slowchat',
-    'remove_message'
+    'remove_message',
+    'change_ban'
 ]);
 
 var Admin = module.exports.Admin = Mod.concat([
