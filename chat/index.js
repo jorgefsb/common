@@ -5,11 +5,18 @@ var linkPattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/
 
 /**
  * Gets the role of the user object. "User" if we don't match anything else.
- * @param  {Object} user
+ * @param  {Object|String} user
  * @return {Boolean}
  */
 var getRole = module.exports.getRole = function (user) {
-    var permissions = roles[user.role];
+    var role;
+    if (typeof user === 'string') {
+        role = user;
+    } else {
+        role = user ? user.role : null;
+    }
+
+    var permissions = roles[role];
     if (typeof permissions === 'undefined') {
         permissions = roles.User;
     }
