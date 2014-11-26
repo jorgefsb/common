@@ -12,6 +12,10 @@ describe('roles', function () {
     it('applies named role correctly', function () {
         expect(chat.can({ role: 'Banned' }, 'chat')).toBe(false);
     });
+
+    it('works with role levels correctly', function () {
+        expect(chat.level({ role: 'Banned' }) > chat.level({ role: 'Normal' })).toBe(false);
+    });
 });
 
 describe('links', function () {
