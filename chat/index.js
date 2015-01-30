@@ -16,12 +16,12 @@ var getRole = module.exports.getRole = function (user) {
         role = user ? user.role : null;
     }
 
-    var permissions = roles[role];
-    if (typeof permissions === 'undefined') {
-        permissions = roles.User;
+    var obj = roles[role];
+    if (typeof obj === 'undefined') {
+        obj = roles.User;
     }
 
-    return permissions;
+    return obj;
 };
 
 /**
@@ -32,20 +32,19 @@ var getRole = module.exports.getRole = function (user) {
  * @return {Boolean}
  */
 module.exports.can = function (user, action) {
-    return getRole(user).indexOf(action) !== -1;
+    return getRole(user).permissions.indexOf(action) !== -1;
 };
 
 /**
- * Gets the "role level" of the user. This is an integer which can be used
- * to compare the "priorities" of levels. It's based on the principle of
- * positive permissions. That is, users that can do more things will always
- * have more permissions.
+ * Gets the "role level" of the user. Users with a higher level
+ * can act on those below them, and users with a lower level
+ * cannot act on users above them.
  *
  * @param  {Object} user
  * @return {Number}
  */
 module.exports.level = function (user) {
-    return getRole(user).length;
+    return getRole(user).level;
 };
 
 /**
