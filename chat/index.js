@@ -61,5 +61,5 @@ module.exports.containsLink = function (message) {
  * @return {String}
  */
 module.exports.replaceLink = function (message, replacement) {
-    return message.replace(linkPattern, replacement);
+    return message.replace(/(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, replacement);
 };
