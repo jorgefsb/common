@@ -1,8 +1,5 @@
 var roles = require('./roles');
 
-// Source: http://recurial.com/programming/javascript-snippet-replace-urls-with-hyperlinks/
-var linkPattern = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
-
 /**
  * Gets the role of the user object. "User" if we don't match anything else.
  * @param  {Object|String} user
@@ -54,7 +51,7 @@ module.exports.level = function (user) {
  * @return {Boolean}
  */
 module.exports.containsLink = function (message) {
-    return linkPattern.test(message);
+    return /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig.test(message);
 };
 
 /**
