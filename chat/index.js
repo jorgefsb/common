@@ -25,6 +25,14 @@ var getRole = module.exports.getRole = function (user) {
 };
 
 /**
+ * Returns a list of available roles.
+ * @return {[]String}
+ */
+module.exports.roles = function () {
+    return Object.keys(roles);
+};
+
+/**
  * Returns whether the user is able to perform the given action.
  *
  * @param  {Object} user
