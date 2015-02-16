@@ -16,6 +16,10 @@ describe('roles', function () {
     it('works with role levels correctly', function () {
         expect(chat.level({ role: 'Banned' }) > chat.level({ role: 'Normal' })).toBe(false);
     });
+
+    it('lists roles', function () {
+        expect(chat.roles()).toEqual([ 'Banned', 'Muted', 'User', 'Mod', 'Admin', 'Owner' ]);
+    });
 });
 
 describe('links', function () {
