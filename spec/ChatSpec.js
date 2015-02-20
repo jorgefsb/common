@@ -28,6 +28,11 @@ describe('links', function () {
         expect(chat.containsLink('lalalala')).toBe(false);
     });
 
+    it('resets regex after match', function () {
+        expect(chat.containsLink('http://beam.pro')).toBe(true);
+        expect(chat.containsLink('http://beam.pro')).toBe(true);
+    });
+
     it('replaces links', function () {
         expect(chat.replaceLink('http://beam.pro', '<a href="$1" target="_blank">$1</a>'))
             .toBe('<a href="http://beam.pro" target="_blank">http://beam.pro</a>');

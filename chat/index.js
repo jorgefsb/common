@@ -1,5 +1,16 @@
 var roles = require('./roles');
 
+var linkRegexRaw = /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig;
+
+/**
+ * Return a regex that can be used to match links.
+ * @return {Regex}
+ */
+var linkRegex = module.exports.linkRegex = function () {
+    linkRegexRaw.lastIndex = 0;
+    return linkRegexRaw;
+};
+
 /**
  * Gets the role of the user object. "User" if we don't match anything else.
  * @param  {Object|String} user
@@ -59,7 +70,7 @@ module.exports.level = function (user) {
  * @return {Boolean}
  */
 module.exports.containsLink = function (message) {
-    return /(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig.test(message);
+    return linkRegex().test(message);
 };
 
 /**
@@ -69,5 +80,5 @@ module.exports.containsLink = function (message) {
  * @return {String}
  */
 module.exports.replaceLink = function (message, replacement) {
-    return message.replace(/(\b(https?|ftp):\/\/[-A-Z0-9+&@#\/%?=~_|!:,.;]*[-A-Z0-9+&@#\/%=~_|])/ig, replacement);
+    return message.replace(linkRegex(), replacement);
 };
