@@ -10,5 +10,18 @@ module.exports = function (CQL) {
         CQL.Text('message')
     ]);
 
+    ChatMessage.setter('message', function (value) {
+        return JSON.stringify(value);
+    });
+
+    ChatMessage.getter('message', function (value) {
+        try {
+            return JSON.parse(value);
+        } catch (e) {
+            return value;
+        }
+    });
+
+
     return ChatMessage;
 };
