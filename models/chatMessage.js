@@ -6,7 +6,7 @@ module.exports = function (CQL) {
         CQL.TimeUUID('id').compoundKey(),
         CQL.Int('user_id'),
         CQL.Text('user_name'),
-        CQL.Text('user_roles'),
+        CQL.Set('user_roles', ['text']),
         CQL.Text('message')
     ]);
 
