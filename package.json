@@ -5,16 +5,16 @@
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "https://github.com/MCProHosting/beam-common.git"
+    "url": "https://github.com/WatchBeam/common.git"
   },
   "scripts": {
     "test": "node node_modules/jasmine-node/bin/jasmine-node spec"
   },
   "license": "Proprietary",
   "bugs": {
-    "url": "https://github.com/MCProHosting/beam-common/issues"
+    "url": "https://github.com/WatchBeam/common/issues"
   },
-  "homepage": "https://github.com/MCProHosting/beam-common",
+  "homepage": "https://github.com/WatchBeam/common",
   "devDependencies": {
     "jasmine-node": "^2.0.0"
   }
