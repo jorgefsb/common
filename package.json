@@ -1,5 +1,5 @@
 {
-  "name": "beam-common",
+  "name": "@mcph/beam-common",
   "version": "0.0.1",
   "description": "A module to contain all common functionality used by the frontend and backend of Beam",
   "main": "index.js",
