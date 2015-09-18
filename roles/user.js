@@ -28,6 +28,8 @@ function UserRole () {
         'messages:create:self',
         'messages:reply:self',
         'messages:delete:self',
+        'oauth:authorize:self',
+        'oauth:manage:self',
         'shop:checkout',
         'resource:find:self',
         'resource:delete:self',
