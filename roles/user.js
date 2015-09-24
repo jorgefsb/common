@@ -18,6 +18,7 @@ function UserRole () {
         'channel:costream:self',
         'channel:follow:self',
         'channel:analytics:self',
+        'channel:tetris:self',
         'transaction:cancel:self',
         'transaction:view:self',
         'subscription:view:self',
