@@ -21,6 +21,7 @@ function UserRole () {
         'channel:tetris:self',
         'transaction:cancel:self',
         'transaction:view:self',
+        'invoice:view:self',
         'subscription:view:self',
         'subscription:create:self',
         'subscription:renew:self',
