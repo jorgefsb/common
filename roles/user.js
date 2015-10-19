@@ -5,6 +5,7 @@ function UserRole () {
     this.level = 10;
     this.permissions = [
         'user:analytics:self',
+        'user:details:self',
         'user:edit:self',
         'user:delete:self',
         'user:update:self',
