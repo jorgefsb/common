@@ -8,7 +8,8 @@ function AdminRole () {
     this.permissions = [
         'announcement:create',
         'channel:suspend',
-        'channel:update'
+        'channel:update',
+        'tetris:manage'
     ];
 
     Role.call(this);
