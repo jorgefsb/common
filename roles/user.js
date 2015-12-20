@@ -16,6 +16,7 @@ function UserRole () {
         'channel:update:self',
         'channel:partnership:self',
         'channel:details:self',
+        'channel:streamKey:self',
         'channel:costream:self',
         'channel:follow:self',
         'channel:analytics:self',
