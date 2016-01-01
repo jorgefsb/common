@@ -9,7 +9,8 @@ function AdminRole () {
         'announcement:create',
         'channel:suspend',
         'channel:update',
-        'tetris:manage'
+        'tetris:manage',
+        'tetris:review'
     ];
 
     Role.call(this);
