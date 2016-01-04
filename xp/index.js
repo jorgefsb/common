@@ -58,6 +58,10 @@ Calculator.prototype.getLevel = function (xp) {
  * @return {Number}
  */
 Calculator.prototype.getXp = function (level) {
+    if (level === 1) {
+        return 0;
+    }
+
     var cache = this.cache;
     while (cache.length <= level) {
         this._buildLevel();

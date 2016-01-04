@@ -1,7 +1,7 @@
 var xp = require('../xp');
 describe('xp', function () {
     var boundary = [
-        { level: 0, to: 5 },
+        { level: 0, to: 0 },
         { level: 1, to: 14 },
         { level: 2, to: 27 },
         { level: 3, to: 45 },
