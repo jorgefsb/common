@@ -17,5 +17,9 @@
   "homepage": "https://github.com/WatchBeam/common",
   "devDependencies": {
     "jasmine-node": "^2.0.0"
+  },
+  "dependencies": {
+    "beam-widgets": "^1.0.1",
+    "lodash": "^3.10.1"
   }
 }
