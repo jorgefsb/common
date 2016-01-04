@@ -43,13 +43,13 @@ Calculator.prototype.getLevel = function (xp) {
     }
 
     var cache = this.cache;
-    for (var i = cache.length - 1; i >= 0; i--) {
+    for (var i = cache.length - 1; i > 0; i--) {
         if (cache[i].xpFloor <= xp) {
             return cache[i].level;
         }
     }
 
-    return 0;
+    return 1;
 };
 
 /**

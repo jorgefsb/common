@@ -19,7 +19,7 @@ describe('xp', function () {
 
     it('generates levels correctly', function () {
         for (var k = 0; k < 1; k++) {
-            var bound = 0;
+            var bound = 1;
             for (var i = 0; i < 200; i++) {
                 if (i >= boundary[bound].to) {
                     bound++;
