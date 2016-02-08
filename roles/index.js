@@ -15,8 +15,8 @@ roles.list.ChannelEditor = require('./editor');
 roles.list.Mod = require('./mod');
 roles.list.GlobalMod = require('./globalmod');
 roles.list.Owner = require('./owner');
-roles.list.Admin = require('./admin');
-roles.list.Developer = require('./developer');
+roles.list.Founder = require('./founder');
+roles.list.Staff = require('./staff');
 
 /**
  * Returns the dominant role out of a list of role names.
