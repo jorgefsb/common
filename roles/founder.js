@@ -1,7 +1,7 @@
 var Role = require('./base');
 
-function AdminRole () {
-    this.name = 'Admin';
+function FounderRole () {
+    this.name = 'Founder';
     this.level = 120;
     this.inherits = ['Owner'];
     this.exclusivity = 20;
@@ -16,6 +16,6 @@ function AdminRole () {
     Role.call(this);
 }
 
-AdminRole.prototype = Object.create(Role.prototype);
+FounderRole.prototype = Object.create(Role.prototype);
 
-module.exports = new AdminRole();
+module.exports = new FounderRole();
