@@ -10,7 +10,8 @@ function FounderRole () {
         'channel:suspend',
         'channel:update',
         'tetris:manage',
-        'tetris:review'
+        'tetris:review',
+        'chat:view_lurkers',
     ];
 
     Role.call(this);

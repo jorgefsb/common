@@ -6,6 +6,7 @@ function GlobalModRole () {
     this.inherits = ['Mod'];
     this.permissions = [
         'channel:suspend',
+        'chat:view_lurkers',
     ];
 
     Role.call(this);
