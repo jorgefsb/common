@@ -1,5 +1,6 @@
 module.exports = {
     chat: require('./chat'),
     roles: require('./roles'),
-    xp: require('./xp')
+    xp: require('./xp'),
+    emotes: require('./emotes')
 };
