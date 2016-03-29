@@ -2,25 +2,20 @@
  * Returns the maximum number of emoticons allowed based on subscriber count.
  *
  * @param  {Number} count Subscriber count
- * @param  {Boolean} isPartner Factor in that the channel is a parnered.
  * @return {Number}
  */
-exports.getMaximumEmoticons = function getMaximumEmoticons (count, isPartner) {
-    var bonus = 0;
-    if (isPartner) {
-        bonus += 2;
-    }
-    if (count >= 1000) return 20 + bonus;
-    if (count >= 750) return 18 + bonus;
-    if (count >= 500) return 16 + bonus;
-    if (count >= 250) return 14 + bonus;
-    if (count >= 150) return 12 + bonus;
-    if (count >= 100) return 10 + bonus;
-    if (count >= 60) return 8 + bonus;
-    if (count >= 30) return 6 + bonus;
-    if (count >= 15) return 4 + bonus;
-    if (count >= 5) return 2 + bonus;
-    return bonus;
+exports.getMaximumEmoticons = function getMaximumEmoticons (count) {
+    if (count >= 1000) return 22;
+    if (count >= 750) return 20;
+    if (count >= 500) return 18;
+    if (count >= 250) return 16;
+    if (count >= 150) return 14;
+    if (count >= 100) return 12;
+    if (count >= 60) return 10;
+    if (count >= 30) return 8;
+    if (count >= 15) return 6;
+    if (count >= 5) return 4;
+    return 2;
 };
 
 /**
