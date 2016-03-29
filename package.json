@@ -1,6 +1,6 @@
 {
   "name": "@mcph/beam-common",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "A module to contain all common functionality used by the frontend and backend of Beam",
   "main": "index.js",
   "repository": {
@@ -8,7 +8,8 @@
     "url": "https://github.com/WatchBeam/common.git"
   },
   "scripts": {
-    "test": "node node_modules/jasmine-node/bin/jasmine-node spec"
+    "test": "node node_modules/jasmine-node/bin/jasmine-node spec",
+    "lint": "eslint ."
   },
   "license": "Proprietary",
   "bugs": {
@@ -16,6 +17,8 @@
   },
   "homepage": "https://github.com/WatchBeam/common",
   "devDependencies": {
+    "eslint": "^2.4.0",
+    "eslint-config-airbnb": "^6.2.0",
     "jasmine-node": "^2.0.0"
   },
   "dependencies": {
