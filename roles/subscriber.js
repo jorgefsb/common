@@ -2,7 +2,7 @@ var Role = require('./base');
 
 function SubscriberRole () {
     this.name = 'Subscriber';
-    this.level = 10.2;
+    this.level = 12;
     this.permissions = [];
 
     Role.call(this);
