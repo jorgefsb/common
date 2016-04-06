@@ -11,7 +11,6 @@ function UserRole () {
         'user:update:self',
         'user:twofactor:self',
         'user:log:self',
-        'user:delete:self',
         'user:seen:self',
         'achievement:view:self',
         'channel:update:self',
