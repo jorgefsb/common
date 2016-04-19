@@ -47,7 +47,8 @@ function UserRole () {
         'notification:update:self',
         'log:view:self',
         'chat:connect',
-        'chat:chat'
+        'chat:chat',
+        'team:manage:self'
     ];
 
     Role.call(this);
