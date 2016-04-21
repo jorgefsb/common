@@ -17,6 +17,7 @@ roles.list.GlobalMod = require('./globalmod');
 roles.list.Owner = require('./owner');
 roles.list.Founder = require('./founder');
 roles.list.Staff = require('./staff');
+roles.list.TeamLeader = require('./teamleader');
 
 /**
  * Returns the dominant role out of a list of role names.
