@@ -8,7 +8,8 @@ function ModRole () {
         'chat:bypass_slowchat',
         'chat:remove_message',
         'chat:change_ban',
-        'chat:clear_messages'
+        'chat:clear_messages',
+        'chat:timeout',
     ];
 
     Role.call(this);
