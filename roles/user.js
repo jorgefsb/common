@@ -39,6 +39,7 @@ function UserRole () {
         'messages:delete:self',
         'oauth:authorize:self',
         'oauth:manage:self',
+        'oauth:manageApps:self',
         'shop:checkout',
         'resource:find:self',
         'resource:delete:self',
