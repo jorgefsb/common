@@ -8,6 +8,7 @@ function UserRole () {
         'user:details:self',
         'user:edit:self',
         'user:delete:self',
+        'user:getDiscordInvite:self',
         'user:update:self',
         'user:twofactor:self',
         'user:log:self',
