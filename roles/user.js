@@ -31,6 +31,7 @@ function UserRole () {
         'subscription:create:self',
         'subscription:renew:self',
         'subscription:cancel:self',
+        'recording:manage:self',
         'redeemable:view:self',
         'redeemable:redeem:self',
         'redeemable:create:self',
