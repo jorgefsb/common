@@ -8,8 +8,10 @@
     "url": "https://github.com/WatchBeam/common.git"
   },
   "scripts": {
-    "test": "mocha",
-    "lint": "eslint ."
+    "test": "node xcompile && mocha && go test -v ./go/bcommon",
+    "lint": "eslint .",
+    "xcompile": "node xcompile",
+    "prepublish": "npm run xcompile"
   },
   "license": "Proprietary",
   "bugs": {
