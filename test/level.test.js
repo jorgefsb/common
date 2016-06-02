@@ -1,4 +1,6 @@
+var expect = require('chai').expect;
 var xp = require('../xp');
+
 describe('xp', function () {
     var boundary = [
         { level: 0, to: 0 },
@@ -25,14 +27,14 @@ describe('xp', function () {
                     bound++;
                 }
 
-                expect(xp.getLevel(i)).toBe(boundary[bound].level);
+                expect(xp.getLevel(i)).to.equal(boundary[bound].level);
             }
         }
     });
 
     it('gets xp at level correctly', function () {
         for (var i = 1; i < boundary.length; i++) {
-            expect(xp.getXp(boundary[i].level)).toBe(boundary[i - 1].to);
+            expect(xp.getXp(boundary[i].level)).to.equal(boundary[i - 1].to);
         }
     });
 });
