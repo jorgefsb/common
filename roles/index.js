@@ -67,18 +67,18 @@ roles.getPermissions = function (list) {
     }
 
     var sorted = roles.sort(list);
+    var permissions = [];
     // If the first item in the list has an exclusivity, that's
     // all we need. Otherwise go down and merge permissions.
     if (sorted[0].exclusivity) {
-        return sorted[0].permissions;
+        permissions = sorted[0].permissions;
+    } else {
+        for (var i = 0, l = sorted.length; i < l; i++) {
+            permissions = permissions.concat(sorted[i].permissions);
+        }
     }
 
-    var output = [];
-    for (var i = 0, l = sorted.length; i < l; i++) {
-        output = output.concat(sorted[i].permissions);
-    }
-
-    return _.uniq(output);
+    return _.uniq(permissions, (perm) => perm.replace(/\:self$/, ''));
 };
 
 /**

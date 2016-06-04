@@ -5,7 +5,6 @@ const roles = require('./roles');
 const path = require('path');
 const fs = require('fs');
 const os = require('os');
-
 /**
  * xcompile evaluates and compiles the roles to Go.
  */
@@ -22,10 +21,35 @@ function xcompile(target, callback) {
         var (
     `);
 
+    const names = {};
+
+    /**
+     * fmtPermission formats a permission separated by colons into a StudlyCase
+     * variable.
+     * @param {String} perm
+     * @return {String}
+     */
+    const fmtPermission = (perm) => {
+        const parts = perm.split(/[:_]/).map(p => p[0].toUpperCase() + p.slice(1));
+
+        if (parts[parts.length - 1] === 'Self') {
+            const base = parts.slice(0, -1).join('');
+            names[base] = perm.slice(0, -':self'.length);
+            return parts.slice(0, -1).join('') + ' + ":self"';
+        }
+
+        const out = parts.join('');
+        names[out] = perm;
+        return out;
+    }
+
+
     Object.keys(roles.list).forEach(key => {
         const role = roles.list[key];
         const perms = roles.getPermissions([key])
-            .map(item => `"${item}",\n`)
+            .slice()
+            .sort()
+            .map(item => `${fmtPermission(item)},\n`)
             .join('');
 
         fmt.stdin.write(`
@@ -36,6 +60,16 @@ function xcompile(target, callback) {
                 Permissions: []string{\n${perms}},
             }`
         );
+    });
+
+    fmt.stdin.write(`
+        )
+
+        const (
+    `);
+
+    Object.keys(names).sort().forEach(key => {
+        fmt.stdin.write(`${key} = "${names[key]}"\n`);
     });
 
     fmt.stdin.write(`
