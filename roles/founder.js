@@ -10,6 +10,8 @@ function FounderRole () {
         'announcement:create',
         'channel:suspend',
         'channel:update',
+        'channel:partnership',
+        'partnership:manage',
         'tetris:manage',
         'tetris:review',
         'chat:view_lurkers',

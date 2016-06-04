@@ -194,7 +194,7 @@ var (
 			ChannelCostream + ":self",
 			ChannelDetails + ":self",
 			ChannelFollow + ":self",
-			ChannelPartnership + ":self",
+			ChannelPartnership,
 			ChannelStreamKey + ":self",
 			ChannelSuspend,
 			ChannelUpdate,
@@ -223,6 +223,7 @@ var (
 			OauthAuthorize + ":self",
 			OauthManage + ":self",
 			OauthManageApps + ":self",
+			PartnershipManage,
 			RecordingManage + ":self",
 			RedeemableCreate + ":self",
 			RedeemableRedeem + ":self",
@@ -263,7 +264,7 @@ var (
 			ChannelCostream + ":self",
 			ChannelDetails + ":self",
 			ChannelFollow + ":self",
-			ChannelPartnership + ":self",
+			ChannelPartnership,
 			ChannelStreamKey + ":self",
 			ChannelSuspend,
 			ChannelUpdate,
@@ -292,6 +293,7 @@ var (
 			OauthAuthorize + ":self",
 			OauthManage + ":self",
 			OauthManageApps + ":self",
+			PartnershipManage,
 			RecordingManage + ":self",
 			RedeemableCreate + ":self",
 			RedeemableRedeem + ":self",
@@ -367,6 +369,7 @@ const (
 	OauthAuthorize       = "oauth:authorize"
 	OauthManage          = "oauth:manage"
 	OauthManageApps      = "oauth:manageApps"
+	PartnershipManage    = "partnership:manage"
 	RecordingManage      = "recording:manage"
 	RedeemableCreate     = "redeemable:create"
 	RedeemableRedeem     = "redeemable:redeem"
