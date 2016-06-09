@@ -1,0 +1,25 @@
+{
+    "extends": "airbnb/base",
+    "rules": {
+        "indent": [2, 4],
+        "func-names": 0,
+        "no-param-reassign": 0,
+        "space-before-function-paren": [2, "always"],
+        "valid-jsdoc": [2, {
+            "requireParamDescription": false,
+            "requireReturn": false,
+            "requireReturnDescription": false
+        }],
+        "require-jsdoc": [2, {
+            "require": {
+            "FunctionDeclaration": true,
+                "MethodDefinition": true,
+                "ClassDeclaration": true
+            }
+        }],
+        "no-console": 0,
+    },
+    "globals": {
+        "log": true
+    }
+}

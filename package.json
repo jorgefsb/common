@@ -12,7 +12,7 @@
     "lint": "eslint .",
     "xcompile": "node bin/xcompile",
     "generate-permissions": "node bin/generate-permissions.js",
-    "prepublish": "npm run xcompile"
+    "prepublish": "npm test && npm run xcompile && npm run generate-permissions"
   },
   "license": "Proprietary",
   "bugs": {
