@@ -179,7 +179,7 @@
         "text": "View the users invoices."
     },
     "oauth:manageApps:self": {
-        "text": "View and manage the users OAuth applications"
+        "text": "View and manage the users OAuth applications."
     },
     "partnership:manage": {
         "text": "Accept or deny partnership applications.",
@@ -205,7 +205,7 @@
         "text": "Create, join, leave teams and set the users primary team."
     },
     "tetris:manage": {
-        "text": "Manage all tetris games",
+        "text": "Manage all tetris games.",
         "adminstrative": true
     },
     "tetris:play": {
