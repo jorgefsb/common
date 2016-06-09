@@ -163,7 +163,7 @@
         "text": "Create and view partnership applications."
     },
     "chat:change_ban": {
-        "text": "Manage bans in chats.",
+        "text": "Manage bans in chats."
     },
     "chat:change_role": {
         "text": "Manage roles in chats."
@@ -199,7 +199,7 @@
     },
     "team:administer": {
         "text": "Administrate teams the user has rights in.",
-        "warn": "danger",
+        "warn": "danger"
     },
     "team:manage:self": {
         "text": "Create, join, leave teams and set the users primary team."

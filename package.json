@@ -8,7 +8,7 @@
     "url": "https://github.com/WatchBeam/common.git"
   },
   "scripts": {
-    "test": "node xcompile && mocha && go test -v ./go/bcommon",
+    "test": "npm run xcompile && mocha && go test -v ./go/bcommon",
     "lint": "eslint .",
     "xcompile": "node bin/xcompile",
     "generate-permissions": "node bin/generate-permissions.js",
