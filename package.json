@@ -10,7 +10,8 @@
   "scripts": {
     "test": "node xcompile && mocha && go test -v ./go/bcommon",
     "lint": "eslint .",
-    "xcompile": "node xcompile",
+    "xcompile": "node bin/xcompile",
+    "generate-permissions": "node bin/generate-permissions.js",
     "prepublish": "npm run xcompile"
   },
   "license": "Proprietary",
