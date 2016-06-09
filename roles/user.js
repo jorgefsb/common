@@ -6,7 +6,6 @@ function UserRole () {
     this.permissions = [
         'user:analytics:self',
         'user:details:self',
-        'user:edit:self',
         'user:delete:self',
         'user:getDiscordInvite:self',
         'user:update:self',
