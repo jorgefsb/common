@@ -232,5 +232,9 @@
     "user:update": {
         "text": "Manage all users profiles.",
         "administrative": true
+    },
+    "user:details": {
+        "text": "Allows viewing all users friends, hidden profile details and sessions.",
+        "administrative": true
     }
 }
