@@ -16,7 +16,8 @@
                 "MethodDefinition": true,
                 "ClassDeclaration": true
             }
-        }]
+        }],
+        "vars-on-top": 0
     },
     "globals": {
         "log": true

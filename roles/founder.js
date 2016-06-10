@@ -1,5 +1,7 @@
 var Role = require('./base');
 
+/**
+ */
 function FounderRole () {
     this.name = 'Founder';
     this.level = 120;
@@ -17,7 +19,7 @@ function FounderRole () {
         'chat:view_lurkers',
         'user:update',
         'user:twofactor',
-        'user:log',
+        'user:log'
     ];
 
     Role.call(this);

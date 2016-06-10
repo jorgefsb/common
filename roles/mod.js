@@ -1,5 +1,7 @@
 var Role = require('./base');
 
+/**
+ */
 function ModRole () {
     this.name = 'Mod';
     this.level = 50;
@@ -9,7 +11,7 @@ function ModRole () {
         'chat:remove_message',
         'chat:change_ban',
         'chat:clear_messages',
-        'chat:timeout',
+        'chat:timeout'
     ];
 
     Role.call(this);

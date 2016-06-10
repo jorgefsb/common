@@ -12,7 +12,7 @@ describe('xp', function () {
         { level: 6, to: 122 },
         { level: 7, to: 156 },
         { level: 8, to: 195 },
-        { level: 9, to: 237 },
+        { level: 9, to: 237 }
     ];
 
     beforeEach(function () {

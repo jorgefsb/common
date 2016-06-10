@@ -1,4 +1,9 @@
-function Calculator() {
+
+/**
+ * Utility class used for calculation experience
+ * points and the corresponding level.
+ */
+function Calculator () {
     this.flushCache();
 }
 
@@ -20,7 +25,7 @@ Calculator.prototype._buildLevel = function () {
     this.cache.push({
         level: level,
         xpFloor: Math.floor(xp),
-        xp: xp,
+        xp: xp
     });
 };
 

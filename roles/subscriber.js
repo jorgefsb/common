@@ -1,5 +1,7 @@
 var Role = require('./base');
 
+/**
+ */
 function SubscriberRole () {
     this.name = 'Subscriber';
     this.level = 12;
