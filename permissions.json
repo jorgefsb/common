@@ -206,7 +206,7 @@
     },
     "tetris:manage": {
         "text": "Manage all tetris games.",
-        "adminstrative": true
+        "administrative": true
     },
     "tetris:play": {
         "text": "Allows participating in tetris games."
