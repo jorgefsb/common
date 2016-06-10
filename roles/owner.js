@@ -1,5 +1,7 @@
 var Role = require('./base');
 
+/**
+ */
 function OwnerRole () {
     this.name = 'Owner';
     this.level = 100;

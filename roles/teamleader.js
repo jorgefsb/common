@@ -1,5 +1,7 @@
 var Role = require('./base');
 
+/**
+ */
 function TeamLeaderRole () {
     this.name = 'TeamLeader';
     this.level = 50;

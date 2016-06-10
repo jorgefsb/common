@@ -1,6 +1,6 @@
 {
   "name": "@mcph/beam-common",
-  "version": "2.5.0",
+  "version": "2.6.0",
   "description": "A module to contain all common functionality used by the frontend and backend of Beam",
   "main": "index.js",
   "repository": {
@@ -8,12 +8,14 @@
     "url": "https://github.com/WatchBeam/common.git"
   },
   "scripts": {
-    "test": "node xcompile && mocha && go test -v ./go/bcommon",
+    "test": "npm run lint && npm run xcompile && mocha && go test -v ./go/bcommon",
     "lint": "eslint .",
-    "xcompile": "node xcompile",
-    "prepublish": "npm run xcompile"
+    "xcompile": "node bin/xcompile",
+    "generate-permissions": "node bin/generate-permissions.js",
+    "prepublish": "npm test && npm run xcompile && npm run generate-permissions"
   },
-  "license": "Proprietary",
+  "license": "UNLICENSED",
+  "private": true,
   "bugs": {
     "url": "https://github.com/WatchBeam/common/issues"
   },

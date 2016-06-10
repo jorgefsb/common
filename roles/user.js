@@ -1,12 +1,13 @@
 var Role = require('./base');
 
+/**
+ */
 function UserRole () {
     this.name = 'User';
     this.level = 10;
     this.permissions = [
         'user:analytics:self',
         'user:details:self',
-        'user:edit:self',
         'user:delete:self',
         'user:getDiscordInvite:self',
         'user:update:self',

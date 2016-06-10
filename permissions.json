@@ -1,0 +1,236 @@
+{
+    "achievement:view:self": {
+        "text": "View your earned achievements."
+    },
+    "announcement:create": {
+        "text": "Send site-wide announcements.",
+        "warn": "danger"
+    },
+    "channel:analytics:self": {
+        "text": "View your channel analytics."
+    },
+    "channel:costream:self": {
+        "text": "Manage your costreaming requests."
+    },
+    "channel:details:self": {
+        "text": "View your channel details."
+    },
+    "channel:streamKey:self": {
+        "text": "View your channel\"s stream key.",
+        "warn": "warning"
+    },
+    "channel:follow:self": {
+        "text": "Follow and unfollow other channels."
+    },
+    "channel:partnership:self": {
+        "text": "Manage your partnership status.",
+        "warn": "warning"
+    },
+    "channel:suspend": {
+        "text": "Suspend other channels.",
+        "administrative": true
+    },
+    "channel:update": {
+        "text": "Update all channel settings.",
+        "administrative": true
+    },
+    "channel:update:self": {
+        "text": "Update your channel settings",
+        "warn": "warning"
+    },
+    "chat:bypass_links": {
+        "text": "Bypass links being disallowed in chat."
+    },
+    "chat:bypass_slowchat": {
+        "text": "Bypass slowchat settings on channels."
+    },
+    "chat:chat": {
+        "text": "Interact with chats on your behalf."
+    },
+    "chat:clear_messages": {
+        "text": "Clear messages in chats where authorized."
+    },
+    "chat:connect": {
+        "text": "Connect to chat."
+    },
+    "chat:edit_options": {
+        "text": "Edit chat options, including links settings and slowchat."
+    },
+    "chat:giveaway_start": {
+        "text": "Start a giveaway in chats where authorized."
+    },
+    "chat:poll_start": {
+        "text": "Start a poll in chats where authorized."
+    },
+    "chat:poll_vote": {
+        "text": "Vote in chat polls."
+    },
+    "chat:remove_message": {
+        "text": "Remove own and other\"s messages in chat."
+    },
+    "log:view:self": {
+        "text": "View and manage the your security log."
+    },
+    "messages:create:self": {
+        "text": "Send personal messages on behalf of yourself."
+    },
+    "messages:delete:self": {
+        "text": "Delete personal messages."
+    },
+    "messages:read:self": {
+        "text": "Read your personal messages."
+    },
+    "messages:reply:self": {
+        "text": "Reply to your personal messages."
+    },
+    "notification:update:self": {
+        "text": "Create and manage your notifications."
+    },
+    "notification:view:self": {
+        "text": "View your notifications."
+    },
+    "oauth:manage:self": {
+        "text": "View and manage your OAuth clients.",
+        "warn": "danger"
+    },
+    "oauth:authorize:self": {
+        "text": "Authorize other applications to access your account.",
+        "warn": "danger"
+    },
+    "resource:delete:self": {
+        "text": "Remove your access to emoticons and other graphical resources."
+    },
+    "resource:find:self": {
+        "text": "View emoticons and other graphical resources you have access to."
+    },
+    "shop:checkout": {
+        "text": "Make purchases from the shop on your behalf.",
+        "warn": "danger"
+    },
+    "subscription:cancel:self": {
+        "text": "Cancel your subscriptions.",
+        "warn": "warning"
+    },
+    "subscription:create:self": {
+        "text": "Create new subscriptions."
+    },
+    "subscription:renew:self": {
+        "text": "Renew your existing subscriptions."
+    },
+    "subscription:view:self": {
+        "text": "View who you\"re subscribed to."
+    },
+    "transaction:cancel:self": {
+        "text": "Cancel pending transactions."
+    },
+    "transaction:view:self": {
+        "text": "View your pending transactions."
+    },
+    "user:analytics:self": {
+        "text": "View your user analytics"
+    },
+    "user:delete:self": {
+        "text": "Delete your account.",
+        "warn": "danger"
+    },
+    "user:log:self": {
+        "text": "View your user security log.",
+        "warn": "warning"
+    },
+    "user:twofactor:self": {
+        "text": "Update your two-factor settings.",
+        "warn": "warning"
+    },
+    "user:details:self": {
+        "text": "View your email address and other private details."
+    },
+    "user:update:self": {
+        "text": "Update your account, including your email and password.",
+        "warn": "danger"
+    },
+    "tetris:robot:self": {
+        "text": "Run as an interactive game in your channel."
+    },
+    "tetris:manage:self": {
+        "text": "Create, update and delete the interactive games in your account.",
+        "warn": "warning"
+    },
+    "achievement:view": {
+        "text": "View user achievements.",
+        "administrative": true
+    },
+    "channel:partnership": {
+        "text": "Create and view partnership applications."
+    },
+    "chat:change_ban": {
+        "text": "Manage bans in chats."
+    },
+    "chat:change_role": {
+        "text": "Manage roles in chats."
+    },
+    "chat:timeout": {
+        "text": "Change timeout settings in chats."
+    },
+    "chat:view_lurkers": {
+        "text": "Allow viewing lurking users.",
+        "administrative": true
+    },
+    "invoice:view:self": {
+        "text": "View the users invoices."
+    },
+    "oauth:manageApps:self": {
+        "text": "View and manage the users OAuth applications."
+    },
+    "partnership:manage": {
+        "text": "Accept or deny partnership applications.",
+        "administrative": true
+    },
+    "recording:manage:self": {
+        "text": "Manage the users VODs."
+    },
+    "redeemable:create:self": {
+        "text": "Create redeemables after performing a purchase."
+    },
+    "redeemable:redeem:self": {
+        "text": "Use users redeemable."
+    },
+    "redeemable:view:self": {
+        "text": "View users redeemables."
+    },
+    "team:administer": {
+        "text": "Administrate teams the user has rights in.",
+        "warn": "danger"
+    },
+    "team:manage:self": {
+        "text": "Create, join, leave teams and set the users primary team."
+    },
+    "tetris:manage": {
+        "text": "Manage all tetris games.",
+        "administrative": true
+    },
+    "tetris:play": {
+        "text": "Allows participating in tetris games."
+    },
+    "tetris:review": {
+        "text": "List games pending review.",
+        "administrative": true
+    },
+    "user:getDiscordInvite:self": {
+        "text": "View users discord invites."
+    },
+    "user:log": {
+        "text": "View user logs.",
+        "administrative": true
+    },
+    "user:seen:self": {
+        "text": "Mark a VOD as seen for the user."
+    },
+    "user:twofactor": {
+        "text": "Manage all users two-factor settings.",
+        "administrative": true
+    },
+    "user:update": {
+        "text": "Manage all users profiles.",
+        "administrative": true
+    }
+}

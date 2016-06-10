@@ -1,5 +1,5 @@
 {
-    "extends": "airbnb/legacy",
+    "extends": "airbnb/base",
     "rules": {
         "indent": [2, 4],
         "func-names": 0,
@@ -17,7 +17,7 @@
                 "ClassDeclaration": true
             }
         }],
-        "vars-on-top": 0
+        "no-console": 0,
     },
     "globals": {
         "log": true

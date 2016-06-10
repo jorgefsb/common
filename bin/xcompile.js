@@ -1,14 +1,16 @@
 'use strict';
 
 const child = require('child_process');
-const roles = require('./roles');
+const roles = require('../roles');
 const path = require('path');
 const fs = require('fs');
-const os = require('os');
+
 /**
  * xcompile evaluates and compiles the roles to Go.
+ * @param {string} target Target file name
+ * @param {Function} callback Callbacks with exit code.
  */
-function xcompile(target, callback) {
+function xcompile (target, callback) {
     const fmt = child.spawn('gofmt');
     fmt.stderr.pipe(process.stdout);
     fmt.stdout.pipe(fs.createWriteStream(target));
@@ -35,13 +37,13 @@ function xcompile(target, callback) {
         if (parts[parts.length - 1] === 'Self') {
             const base = parts.slice(0, -1).join('');
             names[base] = perm.slice(0, -':self'.length);
-            return parts.slice(0, -1).join('') + ' + ":self"';
+            return `${parts.slice(0, -1).join('')} + ":self"`;
         }
 
         const out = parts.join('');
         names[out] = perm;
         return out;
-    }
+    };
 
 
     Object.keys(roles.list).forEach(key => {
@@ -55,7 +57,7 @@ function xcompile(target, callback) {
         fmt.stdin.write(`
             ${role.name} = &Role{
                 Name: "${role.name}",
-                Exclusivity: ${role.exclusivity|0},
+                Exclusivity: ${role.exclusivity | 0},
                 Level: ${role.level},
                 Permissions: []string{\n${perms}},
             }`
@@ -82,7 +84,7 @@ function xcompile(target, callback) {
         fmt.stdin.write(`"${name}": ${name},\n`);
     });
 
-    fmt.stdin.write(`}`);
+    fmt.stdin.write('}');
     fmt.stdin.end();
 
     fmt.on('exit', (code) => callback(code));
@@ -93,7 +95,7 @@ module.exports = xcompile;
 
 if (require.main === module) {
     xcompile(
-        path.join(__dirname, 'go/bcommon/roles.go'),
+        path.join(__dirname, '../', 'go/bcommon/roles.go'),
         (code) => process.exit(code)
     );
 }

@@ -1,5 +1,7 @@
 var Role = require('./base');
 
+/**
+ */
 function FounderRole () {
     this.name = 'Founder';
     this.level = 120;
@@ -18,7 +20,7 @@ function FounderRole () {
         'user:update',
         'user:twofactor',
         'user:log',
-        'user:details',
+        'user:details'
     ];
 
     Role.call(this);

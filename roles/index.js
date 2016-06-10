@@ -22,7 +22,7 @@ roles.list.TeamLeader = require('./teamleader');
 /**
  * Returns the dominant role out of a list of role names.
  *
- * @param  {String[]} roles
+ * @param  {String[]} list
  * @return {Role}
  */
 roles.getDominant = function (list) {
@@ -78,7 +78,9 @@ roles.getPermissions = function (list) {
         }
     }
 
-    return _.uniq(permissions, (perm) => perm.replace(/\:self$/, ''));
+    return _.uniq(permissions, function (perm) {
+        return perm.replace(/\:self$/, '');
+    });
 };
 
 /**
@@ -102,7 +104,7 @@ roles.sort = function (list) {
  * @return {Boolean}
  */
 roles.canAdministrate = function (role, other) {
-    role  = typeof role  === 'number' ? role  : roles.getLevel(role);
+    role = typeof role === 'number' ? role : roles.getLevel(role);
     other = typeof other === 'number' ? other : roles.getLevel(other);
 
     return role >= 25 && role - 10 >= other;

@@ -56,7 +56,6 @@ var (
 			UserAnalytics + ":self",
 			UserDelete + ":self",
 			UserDetails + ":self",
-			UserEdit + ":self",
 			UserGetDiscordInvite + ":self",
 			UserLog + ":self",
 			UserSeen + ":self",
@@ -175,7 +174,6 @@ var (
 			UserAnalytics + ":self",
 			UserDelete + ":self",
 			UserDetails + ":self",
-			UserEdit + ":self",
 			UserGetDiscordInvite + ":self",
 			UserLog + ":self",
 			UserSeen + ":self",
@@ -245,7 +243,6 @@ var (
 			UserAnalytics + ":self",
 			UserDelete + ":self",
 			UserDetails + ":self",
-			UserEdit + ":self",
 			UserGetDiscordInvite + ":self",
 			UserLog,
 			UserSeen + ":self",
@@ -315,7 +312,6 @@ var (
 			UserAnalytics + ":self",
 			UserDelete + ":self",
 			UserDetails + ":self",
-			UserEdit + ":self",
 			UserGetDiscordInvite + ":self",
 			UserLog,
 			UserSeen + ":self",
@@ -392,7 +388,6 @@ const (
 	UserAnalytics        = "user:analytics"
 	UserDelete           = "user:delete"
 	UserDetails          = "user:details"
-	UserEdit             = "user:edit"
 	UserGetDiscordInvite = "user:getDiscordInvite"
 	UserLog              = "user:log"
 	UserSeen             = "user:seen"

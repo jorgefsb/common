@@ -1,5 +1,7 @@
 var Role = require('./base');
 
+/**
+ */
 function BannedRole () {
     this.exclusivity = 10;
     this.name = 'Banned';

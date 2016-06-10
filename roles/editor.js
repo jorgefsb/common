@@ -1,5 +1,7 @@
 var Role = require('./base');
 
+/**
+ */
 function ChannelEditorRole () {
     this.name = 'ChannelEditor';
     this.level = 0;

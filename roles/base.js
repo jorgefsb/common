@@ -1,6 +1,9 @@
 var widgets = require('beam-widgets/manifest.json');
 var _ = require('lodash');
 
+/**
+ * Base role class.
+ */
 function Role () {
     // Set default role properties.
     _.defaults(this, {
@@ -34,11 +37,11 @@ function Role () {
 Role.prototype.dominates = function (role) {
     if (!role) {
         return true;
-    } else if (this.exclusivity || role.exclusivity) {
-        return this.exclusivity > role.exclusivity;
-    } else {
-        return this.level > role.level;
     }
+    if (this.exclusivity || role.exclusivity) {
+        return this.exclusivity > role.exclusivity;
+    }
+    return this.level > role.level;
 };
 
 /**
