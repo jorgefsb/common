@@ -18,6 +18,7 @@ function FounderRole () {
         'user:update',
         'user:twofactor',
         'user:log',
+        'user:details',
     ];
 
     Role.call(this);
