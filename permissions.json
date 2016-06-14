@@ -148,6 +148,9 @@
         "text": "Update your account, including your email and password.",
         "warn": "danger"
     },
+    "user:notification:self": {
+        "text": "View and manage your notifications."
+    },
     "tetris:robot:self": {
         "text": "Run as an interactive game in your channel."
     },

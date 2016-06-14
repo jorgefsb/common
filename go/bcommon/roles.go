@@ -31,8 +31,6 @@ var (
 			MessagesDelete + ":self",
 			MessagesRead + ":self",
 			MessagesReply + ":self",
-			NotificationUpdate + ":self",
-			NotificationView + ":self",
 			OauthAuthorize + ":self",
 			OauthManage + ":self",
 			OauthManageApps + ":self",
@@ -58,6 +56,7 @@ var (
 			UserDetails + ":self",
 			UserGetDiscordInvite + ":self",
 			UserLog + ":self",
+			UserNotification + ":self",
 			UserSeen + ":self",
 			UserTwofactor + ":self",
 			UserUpdate + ":self",
@@ -149,8 +148,6 @@ var (
 			MessagesDelete + ":self",
 			MessagesRead + ":self",
 			MessagesReply + ":self",
-			NotificationUpdate + ":self",
-			NotificationView + ":self",
 			OauthAuthorize + ":self",
 			OauthManage + ":self",
 			OauthManageApps + ":self",
@@ -176,6 +173,7 @@ var (
 			UserDetails + ":self",
 			UserGetDiscordInvite + ":self",
 			UserLog + ":self",
+			UserNotification + ":self",
 			UserSeen + ":self",
 			UserTwofactor + ":self",
 			UserUpdate + ":self",
@@ -216,8 +214,6 @@ var (
 			MessagesDelete + ":self",
 			MessagesRead + ":self",
 			MessagesReply + ":self",
-			NotificationUpdate + ":self",
-			NotificationView + ":self",
 			OauthAuthorize + ":self",
 			OauthManage + ":self",
 			OauthManageApps + ":self",
@@ -245,6 +241,7 @@ var (
 			UserDetails,
 			UserGetDiscordInvite + ":self",
 			UserLog,
+			UserNotification + ":self",
 			UserSeen + ":self",
 			UserTwofactor,
 			UserUpdate,
@@ -285,8 +282,6 @@ var (
 			MessagesDelete + ":self",
 			MessagesRead + ":self",
 			MessagesReply + ":self",
-			NotificationUpdate + ":self",
-			NotificationView + ":self",
 			OauthAuthorize + ":self",
 			OauthManage + ":self",
 			OauthManageApps + ":self",
@@ -314,6 +309,7 @@ var (
 			UserDetails,
 			UserGetDiscordInvite + ":self",
 			UserLog,
+			UserNotification + ":self",
 			UserSeen + ":self",
 			UserTwofactor,
 			UserUpdate,
@@ -360,8 +356,6 @@ const (
 	MessagesDelete       = "messages:delete"
 	MessagesRead         = "messages:read"
 	MessagesReply        = "messages:reply"
-	NotificationUpdate   = "notification:update"
-	NotificationView     = "notification:view"
 	OauthAuthorize       = "oauth:authorize"
 	OauthManage          = "oauth:manage"
 	OauthManageApps      = "oauth:manageApps"
@@ -390,6 +384,7 @@ const (
 	UserDetails          = "user:details"
 	UserGetDiscordInvite = "user:getDiscordInvite"
 	UserLog              = "user:log"
+	UserNotification     = "user:notification"
 	UserSeen             = "user:seen"
 	UserTwofactor        = "user:twofactor"
 	UserUpdate           = "user:update"
