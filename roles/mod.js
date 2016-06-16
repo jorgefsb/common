@@ -8,10 +8,11 @@ function ModRole () {
     this.permissions = [
         'chat:bypass_links',
         'chat:bypass_slowchat',
-        'chat:remove_message',
         'chat:change_ban',
         'chat:clear_messages',
+        'chat:remove_message',
         'chat:timeout'
+        'chat:view_deleted',
     ];
 
     Role.call(this);
