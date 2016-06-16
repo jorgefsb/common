@@ -11,8 +11,8 @@ function ModRole () {
         'chat:change_ban',
         'chat:clear_messages',
         'chat:remove_message',
-        'chat:timeout'
-        'chat:view_deleted',
+        'chat:timeout',
+        'chat:view_deleted'
     ];
 
     Role.call(this);
