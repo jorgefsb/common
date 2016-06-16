@@ -239,5 +239,8 @@
     "user:details": {
         "text": "Allows viewing all users friends, hidden profile details and sessions.",
         "administrative": true
+    },
+    "chat:view_deleted": {
+        "text": "REPLACEME!"
     }
 }

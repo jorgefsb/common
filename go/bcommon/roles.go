@@ -96,6 +96,7 @@ var (
 			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
+			ChatViewDeleted,
 		},
 	}
 	GlobalMod = &Role{
@@ -113,6 +114,7 @@ var (
 			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
+			ChatViewDeleted,
 			ChatViewLurkers,
 		},
 	}
@@ -142,6 +144,7 @@ var (
 			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
+			ChatViewDeleted,
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -207,6 +210,7 @@ var (
 			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
+			ChatViewDeleted,
 			ChatViewLurkers,
 			InvoiceView + ":self",
 			LogView + ":self",
@@ -275,6 +279,7 @@ var (
 			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
+			ChatViewDeleted,
 			ChatViewLurkers,
 			InvoiceView + ":self",
 			LogView + ":self",
@@ -349,6 +354,7 @@ const (
 	ChatPollVote         = "chat:poll_vote"
 	ChatRemoveMessage    = "chat:remove_message"
 	ChatTimeout          = "chat:timeout"
+	ChatViewDeleted      = "chat:view_deleted"
 	ChatViewLurkers      = "chat:view_lurkers"
 	InvoiceView          = "invoice:view"
 	LogView              = "log:view"
