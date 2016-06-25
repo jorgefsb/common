@@ -4,7 +4,8 @@
     },
     "announcement:create": {
         "text": "Send site-wide announcements.",
-        "warn": "danger"
+        "warn": "danger",
+        "administrative": true
     },
     "channel:analytics:self": {
         "text": "View your channel analytics."
