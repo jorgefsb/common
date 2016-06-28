@@ -67,7 +67,7 @@
         "text": "Vote in chat polls."
     },
     "chat:remove_message": {
-        "text": "Remove own and other\"s messages in chat."
+        "text": "Remove own and other's messages in chat."
     },
     "log:view:self": {
         "text": "View and manage the your security log."
@@ -92,11 +92,13 @@
     },
     "oauth:manage:self": {
         "text": "View and manage your OAuth clients.",
-        "warn": "danger"
+        "warn": "danger",
+        "administrative": true
     },
     "oauth:authorize:self": {
         "text": "Authorize other applications to access your account.",
-        "warn": "danger"
+        "warn": "danger",
+        "administrative": true
     },
     "resource:delete:self": {
         "text": "Remove your access to emoticons and other graphical resources."
@@ -184,6 +186,7 @@
     },
     "oauth:manageApps:self": {
         "text": "View and manage the users OAuth applications."
+        "administrative": true
     },
     "partnership:manage": {
         "text": "Accept or deny partnership applications.",
@@ -242,6 +245,6 @@
         "administrative": true
     },
     "chat:view_deleted": {
-        "text": "REPLACEME!"
+        "text": "View deleted messages in chat."
     }
 }
