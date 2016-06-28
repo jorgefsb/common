@@ -185,7 +185,7 @@
         "text": "View the users invoices."
     },
     "oauth:manageApps:self": {
-        "text": "View and manage the users OAuth applications."
+        "text": "View and manage the users OAuth applications.",
         "administrative": true
     },
     "partnership:manage": {
