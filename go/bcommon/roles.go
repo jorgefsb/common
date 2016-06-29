@@ -82,6 +82,14 @@ var (
 			ChannelUpdate,
 		},
 	}
+	InteractiveEditor = &Role{
+		Name:        "InteractiveEditor",
+		Exclusivity: 0,
+		Level:       0,
+		Permissions: []string{
+			TetrisManage,
+		},
+	}
 	Mod = &Role{
 		Name:        "Mod",
 		Exclusivity: 0,
@@ -343,69 +351,4 @@ const (
 	ChannelUpdate        = "channel:update"
 	ChatBypassLinks      = "chat:bypass_links"
 	ChatBypassSlowchat   = "chat:bypass_slowchat"
-	ChatChangeBan        = "chat:change_ban"
-	ChatChangeRole       = "chat:change_role"
-	ChatChat             = "chat:chat"
-	ChatClearMessages    = "chat:clear_messages"
-	ChatConnect          = "chat:connect"
-	ChatEditOptions      = "chat:edit_options"
-	ChatGiveawayStart    = "chat:giveaway_start"
-	ChatPollStart        = "chat:poll_start"
-	ChatPollVote         = "chat:poll_vote"
-	ChatRemoveMessage    = "chat:remove_message"
-	ChatTimeout          = "chat:timeout"
-	ChatViewDeleted      = "chat:view_deleted"
-	ChatViewLurkers      = "chat:view_lurkers"
-	InvoiceView          = "invoice:view"
-	LogView              = "log:view"
-	MessagesCreate       = "messages:create"
-	MessagesDelete       = "messages:delete"
-	MessagesRead         = "messages:read"
-	MessagesReply        = "messages:reply"
-	OauthAuthorize       = "oauth:authorize"
-	OauthManage          = "oauth:manage"
-	OauthManageApps      = "oauth:manageApps"
-	PartnershipManage    = "partnership:manage"
-	RecordingManage      = "recording:manage"
-	RedeemableCreate     = "redeemable:create"
-	RedeemableRedeem     = "redeemable:redeem"
-	RedeemableView       = "redeemable:view"
-	ResourceDelete       = "resource:delete"
-	ResourceFind         = "resource:find"
-	ShopCheckout         = "shop:checkout"
-	SubscriptionCancel   = "subscription:cancel"
-	SubscriptionCreate   = "subscription:create"
-	SubscriptionRenew    = "subscription:renew"
-	SubscriptionView     = "subscription:view"
-	TeamAdminister       = "team:administer"
-	TeamManage           = "team:manage"
-	TetrisManage         = "tetris:manage"
-	TetrisPlay           = "tetris:play"
-	TetrisReview         = "tetris:review"
-	TetrisRobot          = "tetris:robot"
-	TransactionCancel    = "transaction:cancel"
-	TransactionView      = "transaction:view"
-	UserAnalytics        = "user:analytics"
-	UserDelete           = "user:delete"
-	UserDetails          = "user:details"
-	UserGetDiscordInvite = "user:getDiscordInvite"
-	UserLog              = "user:log"
-	UserNotification     = "user:notification"
-	UserSeen             = "user:seen"
-	UserTwofactor        = "user:twofactor"
-	UserUpdate           = "user:update"
-)
-
-var RoleMap = map[string]*Role{
-	"Banned":        Banned,
-	"User":          User,
-	"Pro":           Pro,
-	"Subscriber":    Subscriber,
-	"ChannelEditor": ChannelEditor,
-	"Mod":           Mod,
-	"GlobalMod":     GlobalMod,
-	"Owner":         Owner,
-	"Founder":       Founder,
-	"Staff":         Staff,
-	"TeamLeader":    TeamLeader,
-}
+	ChatChangeBan   
