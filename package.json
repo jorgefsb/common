@@ -1,6 +1,6 @@
 {
   "name": "@mcph/beam-common",
-  "version": "2.6.4",
+  "version": "2.7.0",
   "description": "A module to contain all common functionality used by the frontend and backend of Beam",
   "main": "index.js",
   "repository": {
