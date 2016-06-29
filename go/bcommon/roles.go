@@ -82,6 +82,14 @@ var (
 			ChannelUpdate,
 		},
 	}
+	InteractiveEditor = &Role{
+		Name:        "InteractiveEditor",
+		Exclusivity: 0,
+		Level:       0,
+		Permissions: []string{
+			TetrisManage,
+		},
+	}
 	Mod = &Role{
 		Name:        "Mod",
 		Exclusivity: 0,
@@ -397,15 +405,16 @@ const (
 )
 
 var RoleMap = map[string]*Role{
-	"Banned":        Banned,
-	"User":          User,
-	"Pro":           Pro,
-	"Subscriber":    Subscriber,
-	"ChannelEditor": ChannelEditor,
-	"Mod":           Mod,
-	"GlobalMod":     GlobalMod,
-	"Owner":         Owner,
-	"Founder":       Founder,
-	"Staff":         Staff,
-	"TeamLeader":    TeamLeader,
+	"Banned":            Banned,
+	"User":              User,
+	"Pro":               Pro,
+	"Subscriber":        Subscriber,
+	"ChannelEditor":     ChannelEditor,
+	"InteractiveEditor": InteractiveEditor,
+	"Mod":               Mod,
+	"GlobalMod":         GlobalMod,
+	"Owner":             Owner,
+	"Founder":           Founder,
+	"Staff":             Staff,
+	"TeamLeader":        TeamLeader,
 }

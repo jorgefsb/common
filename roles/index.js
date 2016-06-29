@@ -12,6 +12,7 @@ roles.list.User = require('./user');
 roles.list.Pro = require('./pro');
 roles.list.Subscriber = require('./subscriber');
 roles.list.ChannelEditor = require('./editor');
+roles.list.InteractiveEditor = require('./interactiveeditor');
 roles.list.Mod = require('./mod');
 roles.list.GlobalMod = require('./globalmod');
 roles.list.Owner = require('./owner');
