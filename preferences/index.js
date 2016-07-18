@@ -54,6 +54,18 @@ var preferences = {
                 rtmp: 'light',
                 ftl: 'light'
             }
+        },
+        'chat:tagging': {
+            schema: Jo.boolean(),
+            default: true
+        },
+        'chat:colors': {
+            schema: Jo.boolean(),
+            default: true
+        },
+        'chat:sounds:volume': {
+            schema: Jo.number().min(0).max(1),
+            default: 1
         }
     },
     channel: {
