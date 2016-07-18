@@ -158,11 +158,40 @@ function Preferences (prefs) {
  * @throws {Error} If the type does not exist.
  */
 Preferences.prototype._getType = function (type) {
-    if (!this._prefs.hasOwnProperty(type)) {
+    if (!this.exists(type)) {
         throw new Error('Unknown preference type ' + type);
     }
 
     return this._prefs[type];
+};
+
+/**
+ * Returns whether the preference type exists and, optionally, has
+ * a certain key.
+ * @param  {String}  type
+ * @param  {String}  [key]
+ * @return {Boolean}
+ */
+Preferences.prototype.exists = function (type, key) {
+    if (!this._prefs.hasOwnProperty(type)) {
+        return false;
+    }
+
+    if (key === undefined) {
+        return true;
+    }
+
+    return this._prefs[type].defaults.hasOwnProperty(key);
+};
+
+/**
+ * Returns the default value for the preference of a certain type.
+ * @param  {String} type
+ * @param  {String} key
+ * @return {Object}
+ */
+Preferences.prototype.getDefaults = function (type, key) {
+    return this._getType(type).defaults[key];
 };
 
 /**

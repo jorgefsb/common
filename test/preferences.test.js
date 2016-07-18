@@ -29,8 +29,20 @@ describe('preferences', function () {
         expect(function () { prefs.assert('foo', { a: ':)' }); }).not.to.throw;
     });
 
+    it('returns whether preferences exist', function () {
+        expect(prefs.exists('foo')).to.be.true;
+        expect(prefs.exists('bar')).to.be.false;
+        expect(prefs.exists('foo', 'a')).to.be.true;
+        expect(prefs.exists('foo', 'b')).to.be.false;
+    });
+
+    it('gets preference defaults', function () {
+        expect(prefs.getDefaults('foo', 'a')).to.equal('a value');
+    });
+
     it('throws on unknown types', function () {
         expect(function () { prefs.defaults('bar', {}); }).to.throw(/Unknown preference type/);
         expect(function () { prefs.assert('bar', {}); }).to.throw(/Unknown preference type/);
+        expect(function () { prefs.getDefaults('bar', {}); }).to.throw(/Unknown preference type/);
     });
 });
