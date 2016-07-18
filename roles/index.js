@@ -79,7 +79,7 @@ roles.getPermissions = function (list) {
         }
     }
 
-    return _.uniq(permissions, function (perm) {
+    return _.uniqBy(permissions, function (perm) {
         return perm.replace(/\:self$/, '');
     });
 };

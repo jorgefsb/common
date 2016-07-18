@@ -13,10 +13,11 @@ function Role () {
     });
 
     // Add all inherited role's properties.
+    var self = this;
     _.forEach(this.inherits, function (inherit) {
         var role = Role.roles[inherit];
-        this.permissions = _.union(this.permissions, role.permissions);
-    }, this);
+        self.permissions = _.union(self.permissions, role.permissions);
+    });
 
     // Add permissions provided by widgets.
     for (var key in widgets) {
