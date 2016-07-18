@@ -23,11 +23,11 @@
     "chai": "^3.5.0",
     "eslint": "^2.4.0",
     "eslint-config-airbnb": "^6.2.0",
-    "jasmine-node": "^2.0.0",
     "mocha": "^2.5.3"
   },
   "dependencies": {
     "beam-widgets": "^1.0.1",
-    "lodash": "^3.10.1"
+    "jojen": "^1.2.4",
+    "lodash": "^4.13.1"
   }
 }
