@@ -197,7 +197,7 @@ var (
 		Permissions: []string{
 			AchievementView,
 			AnnouncementCreate,
-			ChannelAnalytics + ":self",
+			ChannelAnalytics,
 			ChannelCostream + ":self",
 			ChannelDetails + ":self",
 			ChannelFollow + ":self",
@@ -266,7 +266,7 @@ var (
 		Permissions: []string{
 			AchievementView,
 			AnnouncementCreate,
-			ChannelAnalytics + ":self",
+			ChannelAnalytics,
 			ChannelCostream + ":self",
 			ChannelDetails + ":self",
 			ChannelFollow + ":self",

@@ -10,17 +10,18 @@ function FounderRole () {
     this.permissions = [
         'achievement:view',
         'announcement:create',
+        'channel:analytics',
+        'channel:partnership',
         'channel:suspend',
         'channel:update',
-        'channel:partnership',
+        'chat:view_lurkers',
         'partnership:manage',
         'tetris:manage',
         'tetris:review',
-        'chat:view_lurkers',
-        'user:update',
-        'user:twofactor',
+        'user:details',
         'user:log',
-        'user:details'
+        'user:twofactor',
+        'user:update'
     ];
 
     Role.call(this);
