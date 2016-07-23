@@ -246,5 +246,8 @@
     },
     "chat:view_deleted": {
         "text": "View deleted messages in chat."
+    },
+    "channel:analytics": {
+        "text": "View analytics for a channel."
     }
 }
