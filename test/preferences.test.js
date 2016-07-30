@@ -40,6 +40,12 @@ describe('preferences', function () {
         expect(prefs.getDefaults('foo', 'a')).to.equal('a value');
     });
 
+    it('should not magically add defaults', function () {
+        var o = { a: undefined };
+        prefs.assert('foo', o);
+        expect(o.a).to.be.undefined;
+    });
+
     it('throws on unknown types', function () {
         expect(function () { prefs.defaults('bar', {}); }).to.throw(/Unknown preference type/);
         expect(function () { prefs.assert('bar', {}); }).to.throw(/Unknown preference type/);

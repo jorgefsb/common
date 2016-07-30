@@ -153,7 +153,7 @@ function Preferences (prefs) {
         var schema = {};
         _.forEach(list, function (preference, name) {
             defaults[name] = preference.default;
-            schema[name] = preference.schema.default(preference.default);
+            schema[name] = preference.schema;
         });
 
         return {
