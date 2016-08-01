@@ -17,6 +17,7 @@ function UserRole () {
         'act:follow',
         'act:host',
         'act:subscribe',
+        'act:interactive',
         'act:join:discord',
         'chat:chat',
         'chat:connect',
