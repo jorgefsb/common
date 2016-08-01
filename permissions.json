@@ -249,5 +249,9 @@
     },
     "channel:analytics": {
         "text": "View analytics for a channel."
+    },
+    "user:delete": {
+        "text": "Delete any user.",
+        "administrative": true
     }
 }

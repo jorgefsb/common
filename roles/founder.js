@@ -18,6 +18,7 @@ function FounderRole () {
         'partnership:manage',
         'tetris:manage',
         'tetris:review',
+        'user:delete',
         'user:details',
         'user:log',
         'user:twofactor',
