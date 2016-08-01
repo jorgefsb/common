@@ -154,10 +154,10 @@
     "user:notification:self": {
         "text": "View and manage your notifications."
     },
-    "tetris:robot:self": {
+    "interactive:robot:self": {
         "text": "Run as an interactive game in your channel."
     },
-    "tetris:manage:self": {
+    "interactive:manage:self": {
         "text": "Create, update and delete the interactive games in your account.",
         "warn": "warning"
     },
@@ -211,14 +211,14 @@
     "team:manage:self": {
         "text": "Create, join, leave teams and set the users primary team."
     },
-    "tetris:manage": {
-        "text": "Manage all tetris games.",
+    "interactive:manage": {
+        "text": "Manage all interactive games.",
         "administrative": true
     },
-    "tetris:play": {
-        "text": "Allows participating in tetris games."
+    "interactive:play": {
+        "text": "Allows participating in interactive games."
     },
-    "tetris:review": {
+    "interactive:review": {
         "text": "List games pending review.",
         "administrative": true
     },

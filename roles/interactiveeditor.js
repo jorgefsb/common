@@ -7,7 +7,7 @@ function InteractiveEditorRole () {
     this.name = 'InteractiveEditor';
     this.level = 0;
     this.permissions = [
-        'tetris:manage'
+        'interactive:manage'
     ];
 
     Role.call(this);

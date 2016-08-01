@@ -31,6 +31,9 @@ var (
 			ChatConnect,
 			ChatPollVote,
 			ChatWhisper,
+			InteractiveManage + ":self",
+			InteractivePlay,
+			InteractiveRobot + ":self",
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -52,9 +55,6 @@ var (
 			SubscriptionRenew + ":self",
 			SubscriptionView + ":self",
 			TeamManage + ":self",
-			TetrisManage + ":self",
-			TetrisPlay,
-			TetrisRobot + ":self",
 			TransactionCancel + ":self",
 			TransactionView + ":self",
 			UserAnalytics + ":self",
@@ -93,7 +93,7 @@ var (
 		Exclusivity: 0,
 		Level:       0,
 		Permissions: []string{
-			TetrisManage,
+			InteractiveManage,
 		},
 	}
 	Mod = &Role{
@@ -163,6 +163,9 @@ var (
 			ChatTimeout,
 			ChatViewDeleted,
 			ChatWhisper,
+			InteractiveManage + ":self",
+			InteractivePlay,
+			InteractiveRobot + ":self",
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -184,9 +187,6 @@ var (
 			SubscriptionRenew + ":self",
 			SubscriptionView + ":self",
 			TeamManage + ":self",
-			TetrisManage + ":self",
-			TetrisPlay,
-			TetrisRobot + ":self",
 			TransactionCancel + ":self",
 			TransactionView + ":self",
 			UserAnalytics + ":self",
@@ -236,6 +236,10 @@ var (
 			ChatViewDeleted,
 			ChatViewLurkers,
 			ChatWhisper,
+			InteractiveManage,
+			InteractivePlay,
+			InteractiveReview,
+			InteractiveRobot + ":self",
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -258,10 +262,6 @@ var (
 			SubscriptionRenew + ":self",
 			SubscriptionView + ":self",
 			TeamManage + ":self",
-			TetrisManage,
-			TetrisPlay,
-			TetrisReview,
-			TetrisRobot + ":self",
 			TransactionCancel + ":self",
 			TransactionView + ":self",
 			UserAnalytics + ":self",
@@ -311,6 +311,10 @@ var (
 			ChatViewDeleted,
 			ChatViewLurkers,
 			ChatWhisper,
+			InteractiveManage,
+			InteractivePlay,
+			InteractiveReview,
+			InteractiveRobot + ":self",
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -333,10 +337,6 @@ var (
 			SubscriptionRenew + ":self",
 			SubscriptionView + ":self",
 			TeamManage + ":self",
-			TetrisManage,
-			TetrisPlay,
-			TetrisReview,
-			TetrisRobot + ":self",
 			TransactionCancel + ":self",
 			TransactionView + ":self",
 			UserAnalytics + ":self",
@@ -392,6 +392,10 @@ const (
 	ChatViewDeleted      = "chat:view_deleted"
 	ChatViewLurkers      = "chat:view_lurkers"
 	ChatWhisper          = "chat:whisper"
+	InteractiveManage    = "interactive:manage"
+	InteractivePlay      = "interactive:play"
+	InteractiveReview    = "interactive:review"
+	InteractiveRobot     = "interactive:robot"
 	InvoiceView          = "invoice:view"
 	LogView              = "log:view"
 	MessagesCreate       = "messages:create"
@@ -415,10 +419,6 @@ const (
 	SubscriptionView     = "subscription:view"
 	TeamAdminister       = "team:administer"
 	TeamManage           = "team:manage"
-	TetrisManage         = "tetris:manage"
-	TetrisPlay           = "tetris:play"
-	TetrisReview         = "tetris:review"
-	TetrisRobot          = "tetris:robot"
 	TransactionCancel    = "transaction:cancel"
 	TransactionView      = "transaction:view"
 	UserAnalytics        = "user:analytics"
