@@ -253,5 +253,23 @@
     "user:delete": {
         "text": "Delete any user.",
         "administrative": true
+    },
+    "act:follow": {
+        "text": "Gives the user permission to follow a channel."
+    },
+    "act:host": {
+        "text": "Gives the user permission to host a channel."
+    },
+    "act:interactive": {
+        "text": "Gives the ability to join interactive on a channel."
+    },
+    "act:join:discord": {
+        "text": "Gives the ability to join the Discord server associated to a channel."
+    },
+    "act:subscribe": {
+        "text": "Gives the ability to subscribe in a channel."
+    },
+    "chat:whisper": {
+        "text": "Gives the ability to whisper in a channel"
     }
 }

@@ -15,6 +15,11 @@ var (
 		Level:       10,
 		Permissions: []string{
 			AchievementView + ":self",
+			ActFollow,
+			ActHost,
+			ActInteractive,
+			ActJoinDiscord,
+			ActSubscribe,
 			ChannelAnalytics + ":self",
 			ChannelCostream + ":self",
 			ChannelDetails + ":self",
@@ -24,7 +29,7 @@ var (
 			ChannelUpdate + ":self",
 			ChatChat,
 			ChatConnect,
-			ChatPollVote,
+			ChatWhisper,
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -99,9 +104,6 @@ var (
 			ChatBypassSlowchat,
 			ChatChangeBan,
 			ChatClearMessages,
-			ChatGiveawayStart,
-			ChatPollStart,
-			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
@@ -117,9 +119,6 @@ var (
 			ChatBypassSlowchat,
 			ChatChangeBan,
 			ChatClearMessages,
-			ChatGiveawayStart,
-			ChatPollStart,
-			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
@@ -132,6 +131,11 @@ var (
 		Level:       100,
 		Permissions: []string{
 			AchievementView + ":self",
+			ActFollow,
+			ActHost,
+			ActInteractive,
+			ActJoinDiscord,
+			ActSubscribe,
 			ChannelAnalytics + ":self",
 			ChannelCostream + ":self",
 			ChannelDetails + ":self",
@@ -147,12 +151,10 @@ var (
 			ChatClearMessages,
 			ChatConnect,
 			ChatEditOptions,
-			ChatGiveawayStart,
-			ChatPollStart,
-			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
+			ChatWhisper,
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -196,6 +198,11 @@ var (
 		Level:       120,
 		Permissions: []string{
 			AchievementView,
+			ActFollow,
+			ActHost,
+			ActInteractive,
+			ActJoinDiscord,
+			ActSubscribe,
 			AnnouncementCreate,
 			ChannelAnalytics,
 			ChannelCostream + ":self",
@@ -213,13 +220,11 @@ var (
 			ChatClearMessages,
 			ChatConnect,
 			ChatEditOptions,
-			ChatGiveawayStart,
-			ChatPollStart,
-			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
 			ChatViewLurkers,
+			ChatWhisper,
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -265,6 +270,11 @@ var (
 		Level:       110,
 		Permissions: []string{
 			AchievementView,
+			ActFollow,
+			ActHost,
+			ActInteractive,
+			ActJoinDiscord,
+			ActSubscribe,
 			AnnouncementCreate,
 			ChannelAnalytics,
 			ChannelCostream + ":self",
@@ -282,13 +292,11 @@ var (
 			ChatClearMessages,
 			ChatConnect,
 			ChatEditOptions,
-			ChatGiveawayStart,
-			ChatPollStart,
-			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
 			ChatViewLurkers,
+			ChatWhisper,
 			InvoiceView + ":self",
 			LogView + ":self",
 			MessagesCreate + ":self",
@@ -340,6 +348,11 @@ var (
 
 const (
 	AchievementView      = "achievement:view"
+	ActFollow            = "act:follow"
+	ActHost              = "act:host"
+	ActInteractive       = "act:interactive"
+	ActJoinDiscord       = "act:join:discord"
+	ActSubscribe         = "act:subscribe"
 	AnnouncementCreate   = "announcement:create"
 	ChannelAnalytics     = "channel:analytics"
 	ChannelCostream      = "channel:costream"
@@ -357,13 +370,11 @@ const (
 	ChatClearMessages    = "chat:clear_messages"
 	ChatConnect          = "chat:connect"
 	ChatEditOptions      = "chat:edit_options"
-	ChatGiveawayStart    = "chat:giveaway_start"
-	ChatPollStart        = "chat:poll_start"
-	ChatPollVote         = "chat:poll_vote"
 	ChatRemoveMessage    = "chat:remove_message"
 	ChatTimeout          = "chat:timeout"
 	ChatViewDeleted      = "chat:view_deleted"
 	ChatViewLurkers      = "chat:view_lurkers"
+	ChatWhisper          = "chat:whisper"
 	InvoiceView          = "invoice:view"
 	LogView              = "log:view"
 	MessagesCreate       = "messages:create"
