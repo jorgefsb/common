@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/WatchBeam/common",
   "devDependencies": {
+    "async": "^2.0.1",
     "chai": "^3.5.0",
     "eslint": "^2.4.0",
     "eslint-config-airbnb": "^6.2.0",
