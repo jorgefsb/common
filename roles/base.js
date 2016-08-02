@@ -1,4 +1,3 @@
-var widgets = require('beam-widgets/manifest.json');
 var _ = require('lodash');
 
 /**
@@ -18,13 +17,6 @@ function Role () {
         var role = Role.roles[inherit];
         self.permissions = _.union(self.permissions, role.permissions);
     });
-
-    // Add permissions provided by widgets.
-    for (var key in widgets) {
-        if (widgets[key].permissions && widgets[key].permissions[this.name]) {
-            this.permissions = _.union(this.permissions, widgets[key].permissions[this.name]);
-        }
-    }
 }
 
 /**

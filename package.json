@@ -26,7 +26,6 @@
     "mocha": "^2.5.3"
   },
   "dependencies": {
-    "beam-widgets": "^1.0.1",
     "jojen": "^1.2.4",
     "lodash": "^4.13.1"
   }
