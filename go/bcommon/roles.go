@@ -29,6 +29,7 @@ var (
 			ChannelUpdate + ":self",
 			ChatChat,
 			ChatConnect,
+			ChatPollVote,
 			ChatWhisper,
 			InvoiceView + ":self",
 			LogView + ":self",
@@ -104,6 +105,8 @@ var (
 			ChatBypassSlowchat,
 			ChatChangeBan,
 			ChatClearMessages,
+			ChatGiveawayStart,
+			ChatPollStart,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
@@ -119,6 +122,8 @@ var (
 			ChatBypassSlowchat,
 			ChatChangeBan,
 			ChatClearMessages,
+			ChatGiveawayStart,
+			ChatPollStart,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
@@ -151,6 +156,9 @@ var (
 			ChatClearMessages,
 			ChatConnect,
 			ChatEditOptions,
+			ChatGiveawayStart,
+			ChatPollStart,
+			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
@@ -220,6 +228,9 @@ var (
 			ChatClearMessages,
 			ChatConnect,
 			ChatEditOptions,
+			ChatGiveawayStart,
+			ChatPollStart,
+			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
@@ -292,6 +303,9 @@ var (
 			ChatClearMessages,
 			ChatConnect,
 			ChatEditOptions,
+			ChatGiveawayStart,
+			ChatPollStart,
+			ChatPollVote,
 			ChatRemoveMessage,
 			ChatTimeout,
 			ChatViewDeleted,
@@ -370,6 +384,9 @@ const (
 	ChatClearMessages    = "chat:clear_messages"
 	ChatConnect          = "chat:connect"
 	ChatEditOptions      = "chat:edit_options"
+	ChatGiveawayStart    = "chat:giveaway_start"
+	ChatPollStart        = "chat:poll_start"
+	ChatPollVote         = "chat:poll_vote"
 	ChatRemoveMessage    = "chat:remove_message"
 	ChatTimeout          = "chat:timeout"
 	ChatViewDeleted      = "chat:view_deleted"

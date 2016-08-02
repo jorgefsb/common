@@ -22,6 +22,7 @@ function UserRole () {
         'chat:chat',
         'chat:connect',
         'chat:whisper',
+        'chat:poll_vote',
         'invoice:view:self',
         'log:view:self',
         'messages:create:self',

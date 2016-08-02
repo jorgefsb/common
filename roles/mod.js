@@ -11,6 +11,8 @@ function ModRole () {
         'chat:change_ban',
         'chat:clear_messages',
         'chat:remove_message',
+        'chat:poll_start',
+        'chat:giveaway_start',
         'chat:timeout',
         'chat:view_deleted'
     ];
