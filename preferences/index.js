@@ -23,7 +23,7 @@ var preferences = {
         },
         'chat:chromakey': {
             schema: Jo.boolean(),
-            default: true
+            default: false
         },
         'chat:lurkmode': {
             schema: Jo.boolean(),
